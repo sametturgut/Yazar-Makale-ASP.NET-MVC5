@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>makaleler.com.tr</title>
+    <link href="~/CSS/site.css" rel="stylesheet" />
+    <link href="~/CSS/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    @Html.Partial("siteBaslik")
+    @Html.Partial("solPartial")
+    @Html.Partial("sagPartial")
+
+    <div>
+        @RenderBody()
+    </div>
+
+    @Html.Partial("siteAltBaslik")
+</body>
+</html>

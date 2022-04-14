@@ -1,0 +1,12 @@
+C:\Users\samet\Downloads\UZEM\samet_turgut\DataModel\bin\Debug\DataModel.dll.config
+C:\Users\samet\Downloads\UZEM\samet_turgut\DataModel\bin\Debug\DataModel.dll
+C:\Users\samet\Downloads\UZEM\samet_turgut\DataModel\bin\Debug\DataModel.pdb
+C:\Users\samet\Downloads\UZEM\samet_turgut\DataModel\bin\Debug\EntityFramework.dll
+C:\Users\samet\Downloads\UZEM\samet_turgut\DataModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\samet\Downloads\UZEM\samet_turgut\DataModel\bin\Debug\EntityFramework.xml
+C:\Users\samet\Downloads\UZEM\samet_turgut\DataModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\samet\Downloads\UZEM\samet_turgut\DataModel\obj\Debug\DataModel.csprojAssemblyReference.cache
+C:\Users\samet\Downloads\UZEM\samet_turgut\DataModel\obj\Debug\DataModel.csproj.CoreCompileInputs.cache
+C:\Users\samet\Downloads\UZEM\samet_turgut\DataModel\obj\Debug\DataModel.csproj.CopyComplete
+C:\Users\samet\Downloads\UZEM\samet_turgut\DataModel\obj\Debug\DataModel.dll
+C:\Users\samet\Downloads\UZEM\samet_turgut\DataModel\obj\Debug\DataModel.pdb

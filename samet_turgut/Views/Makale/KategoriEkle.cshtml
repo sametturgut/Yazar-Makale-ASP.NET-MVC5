@@ -1,0 +1,46 @@
+﻿@model List<DataModel.Kategori>
+@{
+    Layout = "~/Views/Shared/siteLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-7">
+        <h4>Kategori Ekleme</h4>
+        <form method="post" action="/Makale/KategoriEkle">
+
+            <label>Kategori Adı</label>
+            <input class="form-control" type="text" name="Ad" placeholder="Kategori Adını Giriniz..." />
+
+
+            <button class="btn btn-primary" type="submit">Kaydet</button>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Kategori No</th>
+                    <th>Kategori Adı</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var kategori in Model)
+                {
+                    <tr>
+                        <td>@kategori.No</td>
+                        <td>@kategori.Ad</td>
+                    </tr>
+
+                }
+            </tbody>
+
+        </table>
+
+    </div>
+</div>

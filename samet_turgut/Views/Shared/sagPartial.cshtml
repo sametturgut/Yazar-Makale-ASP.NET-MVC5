@@ -1,0 +1,22 @@
+﻿@model Tuple<List<DataModel.Kategori>, List<DataModel.Makale>, List<DataModel.Kullanici>>
+@*@model List<DataModel.Kullanici>*@
+<div id="sagPartialDiv" class="container">
+    <div class="col-md-3">
+        <div class="row">
+            <h4>SON YAZARLAR</h4>
+            @foreach (var Kullanici in Model.Item3)
+            {
+                <h5><a style="color:black; text-decoration:none" href="~/Makale/MakaleYazarListele">@Kullanici.Ad @Kullanici.Soyad</a></h5>
+            }
+            @*<h5>Ahmet Hamdi Tanpınar</h5>
+            <h5>Peyami Safa</h5>
+            <h5>Reşat Nuri Güntekin</h5>
+            <h5>Aziz Sancar</h5>
+            <h5>Memduh Samancı</h5>
+            <h5>Elif Kayabey</h5>
+            <h5>Mustafa Yıldız</h5>
+            <h5>Ercan Taka</h5>
+            <h5>Semiha Üzümcü</h5>*@
+        </div>
+    </div>
+</div>

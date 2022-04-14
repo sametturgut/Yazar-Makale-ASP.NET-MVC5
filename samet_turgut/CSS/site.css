@@ -1,0 +1,68 @@
+﻿body {
+}
+#siteisimId {
+    text-align: left;
+}
+
+#girisId {
+    text-align: right;
+}
+
+#baslikDiv {
+    background-color: aqua;
+    height: 100px;
+    width: 100%;
+}
+
+#baslikYazilari {
+    padding-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#altBaslikDiv {
+    background-color: darkcyan;
+    height: 100px;
+    width: 100%;
+}
+
+#altBaslikYazilari {
+    padding-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#iletisimButon {
+    align-self: flex-end;
+}
+#solPartialDiv {
+    background-color: darkgray;
+    height: 700px;
+    width: 150px;
+    text-align:left;
+    padding-top:15px;
+    float:left;
+}
+
+#sagPartialDiv {
+    background-color: darkgray;
+    height: 700px;
+    width: 150px;
+    text-align:right;
+    float:right;
+}
+#sonMakalelerDiv{
+    margin-bottom:45px;
+    padding-left:350px;
+    padding-top:15px;
+}
+
+.sonMakalehuc{
+    padding-bottom:20px;
+}
+#iletisimButon{
+    float:right;
+}
+#makaleTable{
+    padding-left:150px;
+}

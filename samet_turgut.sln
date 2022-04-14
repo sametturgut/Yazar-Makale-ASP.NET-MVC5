@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "samet_turgut", "samet_turgut\samet_turgut.csproj", "{2C9F9692-6E80-410B-B43D-82263C2E96D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModel", "DataModel\DataModel.csproj", "{11B737BA-AD78-4A7A-9C14-F11AF5BC40CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C9F9692-6E80-410B-B43D-82263C2E96D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C9F9692-6E80-410B-B43D-82263C2E96D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C9F9692-6E80-410B-B43D-82263C2E96D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C9F9692-6E80-410B-B43D-82263C2E96D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11B737BA-AD78-4A7A-9C14-F11AF5BC40CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11B737BA-AD78-4A7A-9C14-F11AF5BC40CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11B737BA-AD78-4A7A-9C14-F11AF5BC40CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11B737BA-AD78-4A7A-9C14-F11AF5BC40CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7B50882-BFEB-4756-B68A-CC7D42671CEA}
+	EndGlobalSection
+EndGlobal

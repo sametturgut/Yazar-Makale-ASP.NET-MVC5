@@ -1,0 +1,27 @@
+﻿@model Tuple<List<DataModel.Kategori>, List<DataModel.Makale>, List<DataModel.Kullanici>>
+@*@model List<DataModel.Kategori>*@
+<div id="solPartialDiv" class="container">
+        <div class="col-md-3">
+            <div class="row">
+                @foreach (var kategori in Model.Item1)
+                {
+                    <h5><a style="color:black; text-decoration:none" href="~/Makale/MakaleListele">@kategori.Ad</a></h5>
+                }
+                @*<h5>Yönetim</h5>
+                <h5>Biyoloji</h5>
+                <h5>Fizik</h5>
+                <h5>Matematik</h5>
+                <h5>İktisat</h5>
+                <h5>Bilgisayar</h5>
+                <h5>Yazılım</h5>
+                <h5>Yapay Zeka</h5>
+                <h5>Ziraat</h5>
+                <h5>Sosyoloji</h5>
+                <h5>Optik</h5>
+                <h5>Tarih</h5>
+                <h5>Edebiyat</h5>
+                <h5>Mühendislik</h5>
+                <h5>Teknoloji</h5>*@
+            </div>
+        </div>
+</div>

@@ -1,0 +1,51 @@
+﻿@model List<DataModel.Unvan>
+@{
+    Layout = "~/Views/Shared/siteLayout.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-md-7">
+        <h4>Unvan Bilgisi Ekleme</h4>
+        <form method="post" action="/Makale/UnvanEkle">
+
+            <label>Unvan Adı</label>
+            <input class="form-control" type="text" name="Ad" placeholder="Unvan Adını Giriniz..." />
+            <label>Unvan Kısa Adı</label>
+            <input class="form-control" type="text" name="KisaAd" placeholder="Unvan kısa adınız giriniz.." />
+
+            <button class="btn btn-primary" type="submit">Kaydet</button>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Ad</th>
+                    <th>Unvan Kısa Adı</th>
+                    <th>Yazar Sayısı</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var unvan in Model)
+                {
+                    <tr>
+                        <td>@unvan.No</td>
+                        <td>@unvan.Ad</td>
+                        <td>@unvan.KisaAd</td>
+                        <td>@unvan.Kullanici.Count</td>
+                    </tr>
+
+                }
+            </tbody>
+
+        </table>
+
+    </div>
+</div>

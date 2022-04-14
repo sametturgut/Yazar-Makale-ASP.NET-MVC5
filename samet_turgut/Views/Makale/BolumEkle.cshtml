@@ -1,0 +1,45 @@
+﻿@model List<DataModel.Bolum>
+@{
+    Layout = "~/Views/Shared/siteLayout.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-md-7">
+        <h4>Bolum Bilgisi Ekleme</h4>
+        <form method="post" action="/Makale/BolumEkle">
+
+            <label>Bolum Adı</label>
+            <input class="form-control" type="text" name="Ad" placeholder="Bolum Adını Giriniz..." />
+
+            <button class="btn btn-primary" type="submit">Kaydet</button>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Ad</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var bolum in Model)
+                {
+                    <tr>
+                        <td>@bolum.No</td>
+                        <td>@bolum.Ad</td>
+                    </tr>
+
+                }
+            </tbody>
+
+        </table>
+
+    </div>
+</div>

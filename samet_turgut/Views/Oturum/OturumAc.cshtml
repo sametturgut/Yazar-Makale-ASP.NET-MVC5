@@ -1,0 +1,33 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <link href="~/CSS/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-3">
+                <form method="post" action="/Oturum/Oturum">
+                    <label>Kullanıcı Adı:</label>
+                    <input type="text" name="KullaniciAdi" placeholder="Kullanıcı adını giriniz" class="form-control" />
+
+                    <label>Parola</label>
+                    <input name="Parola" type="password" placeholder="Parola giriniz." class="form-control" />
+
+                    <button type="submit">Oturum Başlat</button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
+

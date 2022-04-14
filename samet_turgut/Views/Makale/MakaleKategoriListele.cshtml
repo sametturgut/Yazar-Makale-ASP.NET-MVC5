@@ -1,0 +1,26 @@
+﻿@model List<DataModel.Makale>
+@{
+    Layout = "~/Views/Shared/siteLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col">
+        <table>
+            <thead>
+                <tr>
+                    <th>Makale Adı</th>
+                    <th>Toplam Makale Sayısı</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var makale in Model)
+                {
+                    <tr>
+                        <td>@makale.Ad</td>
+                        <td>@makale.MakaleKategori.Count</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

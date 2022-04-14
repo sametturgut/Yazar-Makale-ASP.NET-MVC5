@@ -1,0 +1,79 @@
+﻿@model List<DataModel.Kullanici>
+@{
+    Layout = "~/Views/Shared/siteLayout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-7">
+        <h4>Kullanici Bilgisi Ekleme</h4>
+        <form method="post" action="/Makale/KullaniciEkle">
+
+            <label>Adı</label>
+            <input class="form-control" type="text" name="Ad" placeholder="Yazar adı giriniz..." />
+            <label>Soyadı</label>
+            <input class="form-control" type="text" name="Soyad" placeholder="Yazar Soyadı giriniz.." />
+            <label>Doğum Tarihi</label>
+            <input class="form-control" type="text" name="DogumTarihi" placeholder="Doğum tarihi giriniz.." />
+            <label>Cinsiyet</label>
+            <input class="form-control" type="text" name="Cinsiyet" placeholder="Cinsiyet giriniz.." />
+            <label>E Posta</label>
+            <input class="form-control" type="text" name="Eposta" placeholder="E posta giriniz.." />
+            <label>Tc Kimlik No</label>
+            <input class="form-control" type="text" name="TcKimlikNo" placeholder="Tc Kimlik No giriniz.." />
+            <label>Kullanıcı Adı</label>
+            <input class="form-control" type="text" name="KullaniciAdi" placeholder="Kullanıcı adı giriniz.." />
+            <label>Parola</label>
+            <input class="form-control" type="text" name="Parola" placeholder="Parola giriniz.." />
+            <label>Unvan No</label>
+            <input class="form-control" type="text" name="UnvanNo" placeholder="Unvan No giriniz.." />
+            <label>Bolum No</label>
+            <input class="form-control" type="text" name="BolumNo" placeholder="Bolum No giriniz.." />
+            <button class="btn btn-primary" type="submit">Kaydet</button>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Ad</th>
+                    <th>Soyad</th>
+                    <th>Doğum Tarihi</th>
+                    <th>Cinsiyet</th>
+                    <th>E Posta</th>
+                    <th>Tc Kimlik No</th>
+                    <th>Kullanıcı Adı</th>
+                    <th>Parola</th>
+                    <th>Unvan No</th>
+                    <th>Bolum No</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var kullanici in Model)
+                {
+                <tr>
+                    <td>@kullanici.No</td>
+                    <td>@kullanici.Ad</td>
+                    <td>@kullanici.Soyad</td>
+                    <td>@kullanici.DogumTarihi</td>
+                    <td>@kullanici.Cinsiyet</td>
+                    <td>@kullanici.Eposta</td>
+                    <td>@kullanici.TcKimlikNo</td>
+                    <td>@kullanici.KullaniciAdi</td>
+                    <td>@kullanici.Parola</td>
+                    <td>@kullanici.UnvanNo</td>
+                    <td>@kullanici.BolumNo</td>
+                </tr>
+
+                }
+            </tbody>
+
+        </table>
+
+    </div>
+</div>

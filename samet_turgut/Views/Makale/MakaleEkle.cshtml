@@ -1,0 +1,65 @@
+﻿@model List<DataModel.Makale>
+@{
+    Layout = "~/Views/Shared/siteLayout.cshtml";
+}
+
+
+<div class="row">
+    <div class="col-md-7">
+        <h4>Makale Ekleme</h4>
+        <form method="post" action="/Makale/MakaleEkle">
+
+            <label>Makale Adı</label>
+            <input class="form-control" type="text" name="Ad" placeholder="Makale Adını Giriniz..." />
+            <label>Yayin Tarihi</label>
+            <input class="form-control" type="text" name="YayinTarihi" placeholder="Yayın tarihi giriniz.." />
+            <label>Dergi No</label>
+            <input class="form-control" type="text" name="DergiNo" placeholder="Dergi No Giriniz..." />
+            <label>Makale Turu No</label>
+            <input class="form-control" type="text" name="MakaleTuruNo" placeholder="Makale Türü No Giriniz..." />
+            <label>Endeks No</label>
+            <input class="form-control" type="text" name="EndeksNo" placeholder="Endeks No Giriniz..." />
+            <label>Ozet</label>
+            <input class="form-control" type="text" name="Ozet" placeholder="Ozet Giriniz..." />
+
+            <button class="btn btn-primary" type="submit">Kaydet</button>
+        </form>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Makale Adı</th>
+                    <th>Yayın Tarihi</th>
+                    <th>Dergi No</th>
+                    <th>Makale Türü No</th>
+                    <th>Endeks No</th>
+                    <th>Ozet</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var makale in Model)
+                {
+                <tr>
+                    <td>@makale.No</td>
+                    <td>@makale.Ad</td>
+                    <td>@makale.YayinTarihi</td>
+                    <td>@makale.DergiNo</td>
+                    <td>@makale.MakaleTuruNo</td>
+                    <td>@makale.EndeksNo</td>
+                    <td>@makale.Ozet</td>
+                </tr>
+
+                }
+            </tbody>
+
+        </table>
+
+    </div>
+</div>

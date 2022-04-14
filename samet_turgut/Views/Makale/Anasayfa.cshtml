@@ -1,0 +1,71 @@
+﻿@model Tuple<List<DataModel.Kategori>, List<DataModel.Makale>, List<DataModel.Kullanici>>
+@*@model List<DataModel.Makale>*@
+@{
+    Layout = "~/Views/Shared/siteLayout.cshtml";
+}
+
+<div id="sonMakalelerDiv" class="container">
+    <h3 class="sonMakalehuc"><u>SON MAKALELER</u></h3>
+    <div class="row">
+        <div class="col-md-6">
+            <table id="makaleTable" class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Makale Adı</th>
+                        <th>Makale Tarihi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var makale in Model.Item2)
+                    {
+                        <tr>
+                            <td>@makale.Ad</td>
+                            <td>@makale.YayinTarihi</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>   
+    @*<div id="rowBir" class="row">
+        <div class="col">
+            <h4>Teknolojiye ilham veren tabii tasarımlar</h4>
+            <h5>15 Temmuz 2016</h5>
+        </div>
+    </div>
+    <hr />
+    <div id="rowİki" class="row">
+        <div class="col">
+            <h4>Büyük Selçuklularda Yüksek Öğretim Kurumları ve Bilim Adamları</h4>
+            <h5>18 Mart 2015</h5>
+        </div>
+    </div>
+    <hr />
+    <div id="rowUc" class="row">
+        <div class="col">
+            <h4>Yapay Sinir Ağlarında Yeni Yaklaşım: Kapsül Sinir Ağları</h4>
+            <h5>30 Ağustos 2017</h5>
+        </div>
+    </div>
+    <hr />
+    <div id="rowDort" class="row">
+        <div class="col">
+            <h4>Divan Şiirinde Mücerret Kavramlar</h4>
+            <h5>29 Mayıs 2010</h5>
+        </div>
+    </div>
+    <hr />
+    <div id="rowBes" class="row">
+        <div class="col">
+            <h4>İbni Haldun ve Sosyoloji Biliminin Kuruluşu</h4>
+            <h5>26 Ağustos 2014</h5>
+        </div>
+    </div>
+    <hr />
+    <div id="rowAlti" class="row">
+        <div class="col">
+            <h4>Örümcek Ağındaki Tasarımın Çelik Tellere Uygulanması</h4>
+            <h5>29 Nisan 2018</h5>
+        </div>
+    </div>*@
